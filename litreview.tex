@@ -1,0 +1,308 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,latexsym,amsfonts,amssymb,graphicx,amsthm,epsfig,enumerate}
+\usepackage[utf8]{inputenc}
+\usepackage{dirtytalk}
+\usepackage{tikz,verbatim,tabularx} % adds charting fuctions
+%\newcolumntype{C}{>{\centering\arraybackslash}X}
+\linespread{1.5}
+\usepackage[margin=1in]{geometry}
+
+
+%\pagestyle{empty}
+
+\begin{document}
+	\title{Literature review on observational evidence for an accelerating expansion of the universe} 
+  \author{annon}
+	% add other necessary information here
+	
+	\maketitle
+	\thispagestyle{empty}
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	
+	\section{Introduction}
+When Einstein developed and published his theory of general relativity, he was convinced that the universe was static. Contrary to what the solutions to his field equations implied, that is, that the universe was expanding, Einstein assumed he had come across the same problem Newton did when he developed his laws of gravity. If the universe was truly static, and gravity was always an attractive force, why did it not collapse on itself? Convinced otherwise, Einstein added a term to his solution to push against gravity in order for the universe to be static. This term, which is deemed the cosmological constant, is something that Einstein later referred to as the biggest blunder of his life [1]. Today, there are now many pieces of evidence that point to not only an expanding universe, but an accelerating expanding universe. The discovery of an accelerating expansion of the universe is of much importance because it gives a key insight into how the universe came to be, and what the ultimate fate of the universe is.
+	\\ 
+	
+%trying it again
+
+ 
+	\subsection{Cosmology Fundamentals}
+	
+The Big Bang model begins with the idea that the early universe was so dense and hot that it contained a \say{soup} of elementary particles. As the universe expanded, this hot fluid cooled and the universe became less dense eventually resulting in what is seen today. Evidence for an expanding universe lies in two main observations; the redshift of galaxies, and the Cosmic Microwave Background (CMB).
+In 1929, Edwin Hubble presented observational evidence that the universe was undergoing expansion from the relationship between the recessional velocities of galaxies and their distance. The fact that most of the galaxies are moving away from each other implies they were at one time closer together. The relationship between these two quantities is governed by the Hubble constant, $H_0$, which is measured to be close to 70 km s$^{-1}$ Mpc$^{-1}$.
+
+	The second piece of evidence comes from observations of the CMB. About 300,000 years after the Big Bang, the temperature of the universe became cool enough to form bound states. That is, at a redshift around 1100, the temperature of the cosmic fluid is 1000 K and electrons and nuclei combine to form electrically neutral atoms such as H or He. After these atoms formed, the previous photon scattering greatly reduced. This resulted in a transparent universe in which all the primordial photons now detected are redshifted down to microwave wavelengths. Ultimately, these pieces of evidence greatly favour a Big Bang, or $\Lambda$CDM model, for the formation of the universe. As the universe expands, the matter density, $\Omega_\text{m}$, decreases until eventually the dark energy density, $\Omega_\Lambda$, dominates. The $\Lambda$CDM model describes observations very well with its formalism, shown in the next subsection, and with its powerful framework of assumptions. The latter, requires the universe to be homogeneous and isotropic at large scales of at 100 Mpc. Current data from the small temperature fluctuations (one part in $10^5$) [2] in the CMB prove that the universe is not perfectly homogenous and isotropic. However, the model continues to be favourable. 
+	
+	
+	
+	\subsection{$\Lambda$CDM Model}
+
+Dark energy is an unknown type of matter in the universe as there is no way of directly detecting it. Some properties of it however can be understood with formalism from $\Lambda$CDM cosmology. The first of which is spacetime geometry. General relativity was discovered by Einstein$'$s view of how gravity is a manifestation of spacetime. Utilizing the equivalence principle with Fermat$'$s principle, Einstein inferred that in the presence of gravity the shortest path a light beam takes is not a straight line [3]. Thus, he needed a way of mathematically describing the curvature of spacetime. Given the isotropy and homogeneity of the universe, geometry in four-dimensional spacetime is given by the Friedmann-Robertson-Walker (FRW) metric
+
+\begin{equation}
+ds^2 = -dt^2 + a^2(t)\bigg[\frac{dr^2}{1-\kappa r^2}+r^2 d\theta ^2 + r^2\sin ^2 \theta d\phi ^2 \bigg], 
+\end{equation}
+\\
+\noindent where $a(t)$ is the scale factor which describes how distances expand or contract with time [3]. The present day scale factor, $a_0$, is equal to one. In equation (2), $a$ is related to redshift.
+
+\begin{equation}
+\frac{a}{a_0} = \frac{1}{1+z}.
+\end{equation}
+\\
+$\kappa$ is the curvature constant where $\kappa = 1$ for positively curved space, $\kappa = -1$ for negatively curved space, and $\kappa = 0$ for flat space. 
+
+In order to relate the scale factor to stress-energy, Einstein$'$s equations must be solved specialized to the metric equation (1). The field equations look like 
+
+\begin{equation}
+R_{\mu \nu} - \frac{1}{2}Rg_{\mu \nu} = 8\pi GT_{\mu \nu}, 
+\end{equation}
+\\
+\noindent where $\mu, \nu = 0,1,2,3$, $R_{\mu \nu}$ is the Ricci curvature tensor with $R$ the Ricci scalar, $g_{\mu \nu}$ is the metric tensor, and $T_{\mu \nu}$ is the energy-momentum tensor [4]. The Christoffel symbols are given by
+
+\begin{equation}
+\Gamma_{\mu \nu}^\rho=\frac{1}{2}g^{\rho \sigma} \bigg[ \frac{\partial g_{\sigma \mu} } {\partial x^\nu}+ \frac{\partial g_{\sigma \nu} } {\partial x^\mu} - \frac{\partial g_{\mu \nu} } {\partial x^\sigma} \bigg].
+\end{equation}
+\\
+Taking the non-zero components of equation (1), to generate expressions from equation (4), allows the Riemann curvature tensor to be obtained. After similar arguments for Ricci and energy-momentum tensors, taking the (00) component of equation (3) gives the following relation known as the Friedmann equation
+
+\begin{equation}
+H^2 + \frac{\kappa}{a^2}=\frac{8\pi G}{3} \rho.
+\end{equation}
+\\ 
+$H=\frac{\dot a}{a}$ is the Hubble function. Utilizing conservation of energy allows the fluid equation to be derived to relate pressure and energy density as in equation (6)
+
+\begin{equation}
+\dot \rho + 3H(p+\rho)=0.
+\end{equation}
+\\ 
+Combining equation (6) with the differentiated Friedmann equation yields an expression for cosmic acceleration 
+
+\begin{equation}
+\frac{\ddot a}{a}=-\frac{4\pi G}{3}(p+3\rho).
+\end{equation}
+\\ 
+So, for $(p+3\rho) < 0$, the universe can undergo a positive acceleration. This is motivation to take a brief look at the different equations of states for components in $\Lambda$CDM cosmology, since in general it is the sum of energy densities which dictates how the universe evolves. It is assumed in $\Lambda$CDM cosmology that each component behaves like a perfect fluid. Equations of state for the components in the $\Lambda$CDM model have the form $p=w\rho$, where $w$ is a time independent constant [2]. For matter, $w\approx0$, since $\frac{p}{\rho}~\frac{T}{m}<<1$ for the atoms. For dark energy, in order to have a constant equation of state, its pressure must satisfy the only possible Lorentz-invariant equation of state with $w\approx-1$. Thus, if dark energy is at any time the dominating component in the universe, according to equation (7), the acceleration for the universe is positive. If the curvature constant in the Friedmann equation is taken to be zero, for a flat universe, the critical density, $\rho_c$, is defined in a way such that $\Omega_\text{m}+\Omega_\Lambda \approx 1$, where $\Omega_i = \frac{\rho_i}{\rho_c}$, for any $i$ component.
+
+
+	%\begin{itemize}
+		%\item Java:  An object oriented programming language 
+		
+	%\end{itemize}
+	\section{Accelerated Expansion}
+	The following section provides two modern observational pieces of evidence for an accelerating expansion of the universe. 
+	\subsection{Type Ia Supernovae}
+Aside from being aesthetic and powerful, Type Ia Supernovae (SNe Ia) are very useful objects in cosmology for measuring distances. This is because they are standard candles. Theoretical models suggest standard candles arise from the thermonuclear explosion of a white dwarf that has grown to the Chandrasekhar mass. As a result, they are very luminous with an absolute magnitude of $M = -19.5$ mag [5]. Knowing an object$'$s intrinsic luminosity allows for an accurate measurement of flux which then allows its luminosity distance,  
+	
+\begin{equation} 
+D_L = \sqrt{\frac{L}{4\pi F}},
+\end{equation}
+\
+	
+\noindent to be obtained, where $L$ is the object's luminosity and $F$ is its flux.
+
+20 years ago, in a paper published by Riess et al., the High-z Supernova Search Team (HSST) embarked on a program to measure high-z SNe in order to compare their distances to those of their low-z cousins [6]. Because the peak luminosity on a light curve occurs after a short amount of time, supernovae must be observed just shortly after their explosion to precisely measure the magnitude of the peak. Not to mention being rare, such that SNe Ia occur only a few times per millennium in a given galaxy, a large observational sample size at high-z is needed [7]. As Riess et al. explain, traditional methods attempted by a Danish group resulted in two years of work to find one object of a minimum projected amount of at least 100. It was clear that larger detectors and faster telescopes needed to be applied to this problem. The HSST did exactly that, using the CITO 4 m Blanco Telescope with a facility prime-focus CCD camera. This instrument uses a Tek 2048x2048 pixel CCD frame which covers 0.06 deg$^2$. Riess et al. present a total of 37 Sne Ia, 10 of which are high-z SNe Ia, which have light curves as in the below figure.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.38\textwidth]{lightcurves}
+    \caption{Corrected light curves of high-z SNe Ia [6].}
+    \label{fig:mesh1}
+\end{figure}
+
+In Figure 1, the filled symbols represent blue (B) and the open symbols represent visual (V) as per the UBV photometric system. The light curves shown are the empirical multicolour light curve shape (MLCS) model fits to the data. MLCS is a method that employs up to four colours of SNe Ia photometry to yield excellent distance precision and a valid estimate of the uncertainty for each object [6]. In addition, due to the large range of z, K-corrections are needed to convert the observed magnitudes to the rest-frames of B and V. The colour of each supernova needs to be known to determine its K-correction precisely. Differences in the colour can arise from interstellar extinction such as dust, or other kinds of intrinsic properties of the supernova such as variations in the photometric surface temperature. In the paper by Nugent et al. [8], they demonstrated that the K-correction can be reproduced by application of a Galactic reddening law. In any sense, Figure 1 displays the corrected light curves, and their properties are summarized below in Figure 2.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{data_sne}
+    \caption{Properties of high-z SNe Ia using the MLCS method.}
+    \label{fig:mesh1}
+\end{figure}
+
+Riess et al. define the rightmost column in Figure 2, $\mu$, as the distance modulus where
+
+\begin{equation}
+\mu = m-M = 5\log D + 25,
+\end{equation}
+\
+
+with $m$ as the apparent magnitude of the SN and $D$ the distance in Mpc. Recalling equation (1), in FRW cosmology, the luminosity distance at a given $z$ can be defined as a function of cosmological parameters $H_0$, $\Omega_\Lambda$, and $\Omega_\text{m}$, 
+
+\begin{equation}
+D_L = \frac{c}{H_0}(1+z)|\Omega_k|^{-1/2} \sin n\bigg[|\Omega_k|^{1/2} \int_{0}^z dz[(1+z)^2 (1+\Omega_\text{m}z)-z(2+z)\Omega_\Lambda]^{-1/2} \bigg],
+\end{equation}
+\
+
+\noindent where $\Omega_k = 1- \Omega_\Lambda - \Omega_\text{m}$, $\sin n$ is $\sinh$ for $\Omega_k \geq 0$, and is $\sin$ for $\Omega_k \leq 0$. The logic behind equation (3) comes from angular diameter distance, 
+\begin{equation}
+\theta=\frac{s}{d_A },
+\end{equation}
+\noindent where the angle subtended by $s$ on the sky depends on $d_A$ which in turn depends on the cosmological parameters [9]. Using the results of Figure 2 along with the same measurements for the 27 low-z SNe Ia, Figure 9 in the Appendix, the distance modulus as a function of redshift for three cosmologies is plotted below. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.47\textwidth]{sne_cos}
+    \caption{Hubble diagram for the 37 SNe Ia. The upper panel shows $\mu_0$ as a function of z. The bottom panel shows the difference between data and models with the dotted cosmology scenario. }
+    \label{fig:mesh1}
+\end{figure}
+
+\noindent In both panels of Figure 3 the open symbol corresponds to SN1997ck ($z=0.97$), which lacks spectroscopic classification. The purpose of Figure 3 is to distinguish the distance to the SNe Ia of interest given a different energy density content in the universe. The best fit happens to be the model for a cosmology with $\Omega_\Lambda=0.76$ and $\Omega_\text{m}=0.24$, represented by the solid line, whose luminosity distance is governed by equation (10). Comparing this to the model where the universe only has matter density $\Omega_\Lambda=0$ and $\Omega_\text{m}=1.00$, or if the universe is expanding uniformly independent of a cosmological constant, at high-z the distances do not fit. In other words, high-z SNe Ia are observed to be dimmer than expected in an empty universe with no cosmological constant. Riess et al. show the confidence intervals as follows in Figure 4.
+\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.51\textwidth]{sne_conf}
+    \caption{Joint confidence intervals for $(\Omega_\Lambda, \Omega_\text{m})$.  }
+    \label{fig:mesh1}
+\end{figure}
+\\
+$q_0$, the deceleration parameter, is defined as $q_0=(\Omega_\text{m}/2)-\Omega_\Lambda$. Thus, for a cosmology such as the solid line scenario in Figure 3, $q_0$ is negative which implies a positively accelerating universe dominated by $\Omega_\Lambda$.
+
+\subsection{The Cosmic Microwave Background}
+	
+As mentioned in the introduction section, the CMB has temperature fluctuations which are about $\pm$300 $\mu$K from the average temperature, currently measured to be 2.725 K [3]. The temperature fluctuations are very important because they prove the universe is not perfectly homogenous and isotropic, and because they provide a power spectrum of peaks that can be analyzed to accurately obtain the cosmological parameters. After the Big Bang, when the universe expanded to a point that was cool enough for electrons and nuclei to combine to form electrically neutral atoms such as H or He, the epoch of last scattering occurred. The photons now detected from the CMB are due to the last scattering event, as said photons are redshifted down to microwave wavelengths. About 70,000 years before this however, during the epoch of recombination, the universe consisted of very tightly bound baryons and photons. This baryonic-photon fluid finds itself in seeds of gravitational potential wells that, over about 14 billion years, evolved into the large-scale structure of the universe we exist in today. Gravity compressing the fluid while the pressure supplied by the radiation of photons resisting results in an oscillating sequence of compressions which can be perceived as sound since sound is a compressional wave [9]. The oscillation stops at the epoch of decoupling, when baryons release the photons. The density of the fluid is preserved in the temperature fluctuations of the CMB in the form of peaks. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{epoch}
+    \caption{Table of events with corresponding age and redshift of the universe [3].}
+    \label{fig:mesh1}
+\end{figure}
+
+\noindent Figure 5 shows the different epochs with their corresponding redshift and age of the universe. The Planck mission in 2015 measured the power spectrum from the CMB with the goal of obtaining values for cosmological parameters. Figure 6 shows this power spectrum.\\
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{power}
+    \caption{CMB power spectrum from [10]. Temperature fluctuation in units of $\mu$K$^2$, as a function of multipole $l$ and angular scale.}
+    \label{fig:mesh1}
+\end{figure}
+	
+$l$ is defined as the multipole and is related to angular scale in the sky where $\theta \approx \frac{180^\text{o}}{l}$. The peaks in the power spectrum are often referred to as acoustic peaks because they form a harmonic series based on the distance sound can travel by recombination [9]. The first peak represents the mode that compressed once inside potential wells before recombination. Higher acoustic peaks are due to baryon loading which says that the frequency and amplitude of the oscillations are slowed down by the baryons. Ultimately, the angular scales of the acoustic peaks are the key to determining the cosmological parameters. The first peak in particular, can be analyzed to determine the spatial geometry of the universe. Deriving a relationship between the angle to the acoustic peak and the redshift at the time of decoupling yields
+
+\begin{equation}
+\theta \approx \frac{1}{\sqrt{3}} \sqrt{ \frac{1-(1-\Omega_\Lambda - \Omega_\text{m})}{z} }.
+\end{equation}
+\\
+\noindent The argument for this expression is similar to that of equation (3), which used equation (4). Using $z=1100$ for the time of decoupling, for a spatially flat universe, $1-\Omega_\Lambda - \Omega_\text{m}=0$ so $\theta \approx 1^\text{o}$ which implies $l \approx 180$. Therefore, if the universe is spatially flat, the first peak in Figure 6 must occur at a multipole near 180. The relevant cosmological parameters found by carefully analyzing the CMB are summarized in Figure 8. The full table can be found in Figure 10 in the Appendix.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{planck}
+    \caption{Planck 2015 mission measurements of cosmological parameters from Figure 6 with 68 \% confidence limits including uncertainties. All data measurements made from CMB with various methods, such as TT+lowP [10].
+}
+    \label{fig:mesh1}
+\end{figure}
+
+From Figure 8, the measurements for cosmological parameters yield consistent results with those from SNe data. That is, the universe is currently dominated by dark energy implying a positive acceleration. 
+	
+	
+	\section{Implications and Discussion}
+These results are extremely important to the field of cosmology because they support the Big Bang model of the universe, provide information on the spatial geometry of the universe at large scales, and give an idea for what the ultimate fate of the universe is. To summarize the above arguments, the universe has been expanding since the Big Bang happened, originally with a matter-radiation dominance. As it grew larger, the density of matter and radiation decreased, and dark energy began to dominate resulting in an accelerating expansion. Since these results for cosmological parameters from SNe measurements and from the CMB are so consistent one can confidently explain how the universe began, and the fate of universe. The latter is sealed by a cosmological constant such that it will keep expanding at an accelerating, and eventually exponential, rate as the dark energy density continues to outweigh the mass density. 
+
+In regards to its spatial geometry, the results from observations point directly at a flat space. Another perspective for this argument comes from the CMB, since the photons that travel through the universe know about the geometry it is travelling. Figure 8 summarizes the timeline of each component dominance. Note, radiation was not mentioned in the cosmology fundamentals, or included in the measurements for cosmological parameters. This is because it is nearly negligible, contributing $~8.4 \text{x} 10^{-5}$ to the sum of energy densities. Radiation does, however, have an equation of state parameter $w=\frac{1}{3}$, therefore did dominate early in the universe.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{timeline}
+    \caption{Relationship between the abundance of energy density and scale factor of 	the universe. This figure shows how each type of cosmic fluid dominates during 	particular epochs [2].}
+    \label{fig:mesh1}
+\end{figure}
+\\
+From Figure 8, it can be seen using equation (2) that the transition from matter dominance to dark energy dominance occurs around $a/a_0=0.8$. This implies that the redshift at the time of this epoch is $z=0.25$. Note that in Figure 8, due to the different values for equations of state for each fluid, each component has a different dependence on the scale factor. Radiation density is proportional to $(a_0/a)^4$, matter density is proportional to $(a_0/a)^3$, and dark energy, being that its equation of state carries a constant $w=-1$, is constant. Therefore, in all likelihood the universe is still currently undergoing the transition from matter dominated to dark energy dominated [2]. This result is consistent with the recent observations of SNe Ia and the CMB, which say that the universal expansion is accelerating due to being dark energy dominated. 
+
+What does this mean for the fate of the universe? It means that the universe will continue to expand forever, eventually at an exponential pace. It will become increasingly cold and empty, with the only observable objects being the stars in local galaxy clusters. There are many hypothetical cosmology scenarios, such as the Big Rip, which introduces a phantom energy replacing dark energy. The equation of state for phantom energy carries a $w=-3/2$, which among a few other properties, causes the scale factor to blow up to infinity 22 billion years from today. Solar systems are ripped apart, then planets, then atoms, and eventually spacetime itself, as the phantom energy density increases [11]. Although subjective, this fate of the universe seems much more interesting.
+
+Without even mentioning the earliest epoch, inflation, which is a mystery in and of itself, there is still much unanswered. Since the total matter density is equal to baryonic matter plus dark matter, the latter makes up about 80\% of $\Omega_\text{m}$. Therefore taking into account dark energy means at least 95\% of the content in the universe is completely mysterious. It needs to exist, in order for observations to make sense, but it cannot be detected directly and is a long time away from being fully understood. There is a lot of work to do. What a time to study cosmology. 
+
+\newpage	
+\section{Appendix}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{sne_more}
+    \caption{27 low-z SNe from Riess et al. [6].}
+    \label{fig:mesh1}
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.35\textwidth]{fullcos}
+    \caption{Full table of cosmological parameters from [10].}
+    \label{fig:mesh1}
+\end{figure}
+	\newpage	
+
+	%%%references%%%
+	\begin{thebibliography}{999}
+	
+	%[1]
+	\bibitem{lamport94}
+	Hubble Discoveries. 
+	\emph{Did Einstein Predict Dark Energy?}. 
+	HubbleSite. Web.
+	
+	%[2]
+	\bibitem{lamport94}
+  	C.P. Burgess,
+  	\emph{EFTs and an Introduction to Inflation}.
+  	McMaster University.
+	
+	%[3]
+	\bibitem{lamport95}
+	B. Ryden, 
+	\emph{Introduction to Cosmology}.
+	The Ohio State University Department of Astronomy.
+	
+	%[4]
+	\bibitem{lamport95}
+	T. Wrase,
+	\emph{Deriving the Friedmann equations from general relativity}.
+	Institute for Theoretical Physics Vienna University of Technology.
+	
+	%[5]
+	\bibitem{lamport95}
+	S. A. Colgate, 
+	\emph{Supernovae as a standard candle for cosmology}.
+	New Mexico Institute of Mining and Technology. 1979.	
+	
+	%[6]
+	\bibitem{lamport95}
+	A. G., Riess, et al.
+	\emph{Observational Evidence from Supernovae for an Accelerating Universe and a Cosmological Constant}.
+	1998, AJ, 116, 1009, arXiv:astro-ph/9805201.
+	
+	%[7]
+	\bibitem{lamport95}
+	The Nobel Prize in Physics 2011. 
+	\emph{Nobelprize.org}.
+	Nobel Media AB 2014. Web. 
+	
+	%[8]
+	\bibitem{lamport95}
+	P. Nugent, et al., 
+	\emph{Evidence for a Spectroscopic Sequence among Type Ia Supernovae}.
+	1995. AJ, 444, 2.
+	
+	%[9]
+	\bibitem{lamport95}
+	M. Pettini. 
+	\emph{Introduction to Cosmology}.
+	Lecture 10 - Fluctuations in the CMB.
+	
+	%[10]
+	\bibitem{lamport95}
+	 P. A. R. Ade et al. 
+	\emph{Planck 2015 results. XIII. Cosmological parameters}.
+	Astrophys. 594 arXiv:1502.01589. 
+	
+	%[11]
+	\bibitem{lamport95}
+	 Caldwell, R.R., et al.
+	 \emph{Phantom Energy and Cosmic Doomsday}.
+	 2003. arXiv:astro-ph/0302506v1.
+
+\end{thebibliography}
+
+
+\end{document}
